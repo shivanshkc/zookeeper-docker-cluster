@@ -20,6 +20,6 @@ docker run \
         --publish 23888:3888 \
         --env "ZOO_MY_ID=2" \
         --env "ZOO_SERVERS=server.1=$SERVER1_CONF server.2=$SERVER2_CONF server.3=$SERVER3_CONF" \
-        --volumes $VOLUME/$CONTAINER_NAME/data:/data \
-        --volumes $VOLUME/$CONTAINER_NAME/datalog:/datalog \
+        --volume $VOLUME/$CONTAINER_NAME/data:/data \
+        --volume $VOLUME/$CONTAINER_NAME/datalog:/datalog \
         zookeeper:3.6
