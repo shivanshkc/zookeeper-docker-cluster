@@ -1,6 +1,7 @@
 #!/bin/bash
 
 CONTAINER_NAME=zookeeper-3
+VOLUME=
 
 SERVER1_CONF="x.x.x.x:12888:13888;12181"
 SERVER2_CONF="y.y.y.y:22888:23888;22181"
